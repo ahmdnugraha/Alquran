@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,6 +20,10 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:padding="8dp"
+            android:background="#E8F5E9"
+            android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,9 +31,11 @@
             android:id="@+id/tv_arabic_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:gravity="end"
             android:textDirection="rtl"
+            android:textColor="#1A237E"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_ayah_number"
             app:layout_constraintTop_toTopOf="parent" />
@@ -38,6 +45,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_arabic_text" />
@@ -47,6 +56,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_transliteration" />
