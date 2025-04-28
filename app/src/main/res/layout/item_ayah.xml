@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
     app:cardBackgroundColor="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,16 +15,16 @@
 
         <TextView
             android:id="@+id/tv_ayah_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#2E7D32"
-            android:padding="8dp"
-            android:background="#E8F5E9"
-            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/circle_background"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp" />
 
         <TextView
             android:id="@+id/tv_arabic_text"
@@ -35,10 +34,20 @@
             android:gravity="end"
             android:textDirection="rtl"
             android:textColor="#1A237E"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_ayah_number"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintTop_toBottomOf="@id/tv_arabic_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/tv_transliteration"
